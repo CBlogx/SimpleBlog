@@ -1,0 +1,32 @@
+@import "Top.css";
+@import "Navi.css";
+@import "Main.css";
+@import "Left.css";
+@import "Mid-Top.css";
+@import "Mid-Mid.css";
+@import "Mid-Bot.css";
+@import "Right.css";
+@import "Info.css";
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: lightskyblue;
+}
+
+#page{
+    text-align: center;
+    /* background-color: aliceblue; */
+}
+.Middle{
+    float: left;
+    width: 1135.5px;
+    height:1200px;
+    text-align: center;
+   /*  background-color: lavender; */
+}
+
+.Info{
+    width: 1535.5px;
+    height: 200px;
+
+}
