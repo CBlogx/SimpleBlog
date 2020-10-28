@@ -1,0 +1,39 @@
+body{
+    background:url("cat.gif");
+    background-size: 1600px 800px;
+    background-repeat: no-repeat;
+}
+    #login-face{
+        width: 25%;
+        text-align: center;
+        background: #ff9e9e60;
+        padding: 15px 35px;
+        margin:  auto;
+        margin-top: 18%;
+    }
+    #login-face h1{
+        color:yellowgreen;
+    }
+    #login-face.form.item{
+        margin-top: 15px;
+    }
+    #login-face button{
+        margin-top: 20px;
+        width: 80px;
+        height: 20px;
+        font-size: 15px;
+        background-color: lightblue;
+        font-weight: 700;
+        color: #fff;
+        border: 0;
+        border-radius: 15px;
+    }
+    .input{
+        background: #ff9e9e00;
+         width: 180px;
+         border: none;
+         border-bottom:1px solid #fff;
+         font-size: 18px;
+         outline: medium;
+    }
+   
