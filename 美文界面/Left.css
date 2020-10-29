@@ -1,0 +1,39 @@
+.Left{
+    float: left;
+    width: 200px;
+    height:1200px;
+    background-color: rgb(255, 199, 209);
+}
+.Name{
+    width: 168px;
+    height: 95px;
+    background: url("Pic/Lpic.png");
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.Left ul{
+    float: center;
+    height: 550px;
+    width: 100px;
+    background-color: rgb(255, 195, 199);
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.Left li{
+    display:block;
+    margin-top: 30px;
+    padding: 0;
+}
+.Left a{
+    text-decoration: none;
+    font-style: inherit;
+    color: black;
+    padding: 15px 17.5px;
+}
+.Left li a:hover:not(.active){
+    background-color: rgb(230, 230, 230);
+    }
