@@ -14,13 +14,16 @@
             padding: 0;
         }
     </style>
+    <script type="text/javascript" src="主页面/Time.js">
+    </script>
 </head>
 
-<body>
+<body onload="showSlides()">
     <div id="page">
         <div class="Top">
            <i class="fa fa-cog fa-spin"></i>
            <span>Website is building...  2020.10.21 13:14</span>
+           <p id="Time"></p>
         </div>
         <div class="Navi">
             <div class="Logo">
@@ -38,7 +41,7 @@
                 <li><a href="">语录</a></li>
                 <li><a href="">专题</a></li>
                 <li><a href="">作者</a></li>
-                <div class="More"">
+                <div class="More">
                     <a class="More-More" href="">
                         <span>更多<i class="fa fa-angle-double-down"></i></span>  
                     </a>
@@ -60,7 +63,6 @@
         <div class="Main">
         <div class="Left">
             <div class="Name">
-
             </div>
             <ul>
                 <li><a href="">推荐阅读</a></li>
@@ -72,9 +74,25 @@
                 <li><a href="站长之家/主页面.html">站长之家</a></li>
             </ul>
         </div>
-        <div class="Middle">
+        <div class="Middle" >
             <div class="Mid-Top">
-                Mid-Top
+                <div class="Showpic" >
+                    <div class="fade">
+                        <img class="Slidepic" src="OIP.jpg">
+                    </div>
+                    <div class="fade">
+                        <img class="Slidepic" src="11.jpg">
+                    </div>
+                    <div class="fade">
+                        <img class="Slidepic" src="Lpic.png">
+                    </div>
+
+                </div>
+                <div class="dots" >
+                    <span class="dot" onclick="Currentslide(1)"></span>
+                    <span class="dot" onclick="Currentslide(2)"></span>
+                    <span class="dot" onclick="Currentslide(3)"></span>
+                </div>
             </div>
             <div class="Mid-Mid">
                 Mid-Mid

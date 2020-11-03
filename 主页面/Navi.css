@@ -4,6 +4,9 @@
     width: 1535.5px;
     height: 60px;
     background-color: rgb(242, 242, 235);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30px;
 }
 .Navi ul{
     list-style-type: none;
@@ -27,8 +30,8 @@
 }
 .Search{
     position: absolute;
-    top: 60.6px;
-    left: 1200px;
+    margin-top: -29px;
+    margin-left: 1200px;
     transform: translate(-50%,-50%);
     background-color: #2f3640;
     height: 30px;
@@ -38,8 +41,6 @@
 .Search:hover>.Search-txt{
     width: 200px;
     padding: 0 6px;
-    /* transform: rotate(360deg);
-    user-select: none; */
 }
 .Search:hover>.Search-btn{
     background-color: white;
@@ -58,7 +59,6 @@
     cursor: pointer;
 }
 .Search-txt{
-    
     border: none;
     background: none;
     outline: none;

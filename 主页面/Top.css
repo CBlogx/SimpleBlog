@@ -2,6 +2,9 @@
     width: 1535.5px;
     height: 30px;
     background-color: #24292e;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 .Top i{
     float: left;
@@ -14,5 +17,13 @@
     color: azure;
     margin-top: 5.5px;
     margin-left: 10px;
+    font-size: small;
+}
+#Time{
+    float: left;
+    margin-top: 5.5px;
+    margin-left: 670px;
+    width: 300px;
+    color: azure;
     font-size: small;
 }

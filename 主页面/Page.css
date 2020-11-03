@@ -16,18 +16,15 @@ body{
 
 #page{
     text-align: center;
-    /* background-color: aliceblue; */
 }
 .Middle{
     float: left;
     width: 1135.5px;
     height:1200px;
     text-align: center;
-   /*  background-color: lavender; */
 }
 
 .Info{
     width: 1535.5px;
     height: 200px;
-
 }
