@@ -1,10 +1,11 @@
 .Top{
-    width: 1535.5px;
+    width: 1519.2px;
     height: 30px;
     background-color: #24292e;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 4;
 }
 .Top i{
     float: left;
@@ -22,7 +23,7 @@
 #Time{
     float: left;
     margin-top: 5.5px;
-    margin-left: 670px;
+    margin-left: 640px;
     width: 300px;
     color: azure;
     font-size: small;

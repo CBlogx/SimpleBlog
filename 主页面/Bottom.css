@@ -1,0 +1,35 @@
+.Bottom{
+    width: 1519.2px;
+    height: 200px;
+    background-color: white;
+    border-top:solid 2px ;
+    border-color:#90949c;
+    
+}
+.Info{
+    width: 1119.2px;
+    height: 200px;
+}
+.Infoborder{
+    background-color: #F7F8FA;
+    float: left;
+    width: 1117.2px;
+    height: 50px;
+    margin-top: 40px;
+    border-style: dashed;
+    border-width: 1px;
+    font-family: "Times New Roman",Georgia,Serif;
+}
+.Infoborder-mation{
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.Information{
+    float: left;
+    font-family: "Times New Roman",Georgia,Serif;
+}
+.Information-s{
+    margin-top: 10px;
+    opacity: 0.8;
+}
