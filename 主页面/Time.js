@@ -38,14 +38,14 @@ function Time(){
     document.getElementById("Time").innerText=datetime+" "+time; 
 }
 
-var Index = 0,Sindex= 1,Indextime,flag=0;
+var Index = 0,Sindex= 1,Indextime,flag=0,Timeout;
 function Currentslide(n) {
   showSlide(Sindex = n);
   clearTimeout(Indextime);
   if(flag){
     flag=0;
     Index=Sindex-1;
-    setTimeout(showSlides,5000);
+    Timeout=setTimeout(showSlides,5000);
   }
 }
 function showSlides(){
@@ -64,6 +64,7 @@ function showSlides(){
     }
     Index++;
     if(Index>slides.length){Index=1;}
+    clearTimeout(Timeout);
     slides[Index-1].style.display = "block"; 
     dots[Index-1].className = "dot active";
     describles[Index-1].style.display="inline-block";

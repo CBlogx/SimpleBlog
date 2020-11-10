@@ -20,16 +20,19 @@
     position: absolute;
     width: 125px;
     height: 125px;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    left: 0;top: 0;right: 0;bottom: 0;
+    text-align: center;
+    line-height: 125px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
     margin-left: 700px;
     margin-top: 300px;
     background-color: #FF0000;
     border-radius: 50%;
     border: 8px double #d11a1a;
     z-index: 3;
+    
 }
 #Middle:hover{
     cursor: pointer;
@@ -44,6 +47,26 @@
     border-right: 768px solid;
     border-bottom: 400px solid ;
     border-color: transparent transparent rgb(255, 255, 255) transparent; 
+}
+#blog{
+    width: 300px;
+    height: 25px;
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 640px;
+    font-size: 21px;
+    font-weight: bold;
+    color: red;
+    z-index: 4;
+}
+.blog{
+    transform-origin: 62.5px -122px;
+    animation-name:blog;
+    animation-duration: 6s;
+}
+@keyframes blog{
+    0%{transform:rotateX(0);}
+    100%{transform:rotateX(90deg);}
 }
 .go{
     animation: go ;
