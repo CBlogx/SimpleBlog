@@ -1,22 +1,19 @@
 .Mid-Top{
     width: 1119.2px;
-    height: 480px;
+    height: 600px;
     background-color: lightgoldenrodyellow;
 }
 .Showpic{
   float: left;
   width: 400px;
   height: 400px;
-  background-color: orange;
   margin-left: 25px;
   margin-top: 40px;
-  box-sizing: border-box;
 }
 .Slidepic{
   width: 400px;
   height: 400px;
   display: none;
-  box-sizing: border-box;
 }
 .dots{
 position: absolute;
@@ -46,15 +43,47 @@ margin-left: 360px;
 -webkit-animation-duration: 1.5s;
 animation-name: fade;
 animation-duration: 1.5s;
-box-sizing: border-box;
 }
 @-webkit-keyframes fade {
-from {opacity: 0.1} 
+from {opacity: 0.4} 
 to {opacity: 1}
 }
 @keyframes fade {
-from {opacity: 0.1} 
+from {opacity: 0.4} 
 to {opacity: 1}
+}
+.describles{
+  position: absolute;
+  margin-top: -150px;
+  width: 400px;
+  height: 24px;
+}
+
+.describle{
+  padding: 4px 5px;
+  background-color: black;
+  color: white;
+  margin-left: 20px;
+  font-size: 10px;
+  text-decoration: none;
+  float: left;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+.describle::after{
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 5.8px;
+  left: 78.11px;
+  content: '';
+  border-style: solid;
+  border-width: 6px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color:black;
+  opacity: 0.9;
 }
 
 .theme1{

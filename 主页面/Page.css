@@ -15,11 +15,27 @@ body{
 }
 
 #page{
-    
+    margin-top: -722px;
+}
+.None{
+    display: none;
 }
 .Middle{
     float: left;
     width: 1119.2px;
     height:1200px;
     text-align: center;
+}
+.Page{
+    animation-name:Page;
+    animation-duration: 6s;
+    transform-origin: top;
+}
+@keyframes Page{
+    0%{
+        transform: scale(0,0);  /*开始为原始大小*/
+    }
+    100%{
+        transform: scale(1,1);
+    }
 }

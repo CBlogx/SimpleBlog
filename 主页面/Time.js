@@ -1,4 +1,8 @@
-setInterval(function(){Time()},0);
+window.onload=function(){
+    showSlides();
+    setInterval(function(){Time()},0);
+}
+
 function Time(){
     var d=new Date();
     if(d.getMonth()<9){
@@ -34,35 +38,43 @@ function Time(){
     document.getElementById("Time").innerText=datetime+" "+time; 
 }
 
-var Index = 0,Sindex= 1,Indextime;
+var Index = 0,Sindex= 1,Indextime,flag=0;
 function Currentslide(n) {
   showSlide(Sindex = n);
   clearTimeout(Indextime);
-  if(!showSlide(Sindex=n)){
-    Index--;
-    setTimeout(showSlides,10000);
+  if(flag){
+    flag=0;
+    Index=Sindex-1;
+    setTimeout(showSlides,5000);
   }
 }
 function showSlides(){
-    var i,j;
-    var slides = document.getElementsByClassName("Slidepic");
+    var i;
+    var slides=document.getElementsByClassName("Slidepic");
     var dots=document.getElementsByClassName("dot");
+    var describles=document.getElementsByClassName("describle");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
     }
-    for(j=0;j<dots.length;j++){
-        dots[j].className="dot";
+    for(i=0;i<dots.length;i++){
+        dots[i].className="dot";
+    }
+    for(i=0;i<describles.length;i++){
+        describles[i].style.display="none";
     }
     Index++;
     if(Index>slides.length){Index=1;}
     slides[Index-1].style.display = "block"; 
     dots[Index-1].className = "dot active";
-    Indextime=setTimeout(showSlides,3000);
+    describles[Index-1].style.display="inline-block";
+    Indextime=setTimeout(showSlides,3500);
 }
 function showSlide(n){
   var i,j;
   var slides = document.getElementsByClassName("Slidepic");
   var dots=document.getElementsByClassName("dot");
+  var describles=document.getElementsByClassName("describle");
+  flag=1;
   if (n > slides.length) {Sindex = 1} 
   if (n < 1) {Sindex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -71,7 +83,10 @@ function showSlide(n){
   for(j=0;j<dots.length;j++){
     dots[j].className="dot";
   }
+  for(i=0;i<describles.length;i++){
+    describles[i].style.display="none";
+  }
+  describles[Sindex-1].style.display="inline-block";
   dots[Sindex-1].className="dot active";
   slides[Sindex-1].style.display = "block"; 
 }
-
