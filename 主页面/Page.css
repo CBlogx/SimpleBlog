@@ -1,0 +1,41 @@
+@import "Top.css";
+@import "Navi.css";
+@import "Main.css";
+@import "Left.css";
+@import "Mid-Top.css";
+@import "Mid-Mid.css";
+@import "Mid-Bot.css";
+@import "Right.css";
+@import "Bottom.css";
+@import "More.css";
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #F5F6F7;
+}
+
+#page{
+    margin-top: -722px;
+}
+.None{
+    display: none;
+}
+.Middle{
+    float: left;
+    width: 1119.2px;
+    height:1200px;
+    text-align: center;
+}
+.Page{
+    animation-name:Page;
+    animation-duration: 6s;
+    transform-origin: top;
+}
+@keyframes Page{
+    0%{
+        transform: scale(0,0);  /*开始为原始大小*/
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}

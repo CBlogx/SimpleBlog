@@ -1,0 +1,46 @@
+.More{
+    position: relative;
+    display: inline-block;
+}
+.More-More{
+    text-decoration: none;
+    color: black;
+    padding:20px 10px 20px 10px;
+    cursor: default;
+}
+.More-More span{
+    font-size: 17px;
+    margin: 0.5px;
+    cursor: pointer;
+}
+.Morething{
+    margin-top: 17px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+.Morething a{
+    text-align: left;
+    color: black;
+    padding: 12px 4px;
+    text-decoration: none;
+    display: block;
+}
+.Morething a:hover{
+    color: red;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-color: black;
+}
+.More:hover>.Morething{
+    display: block;
+}
+.More:hover>.More-More{
+     color: red;
+     font-weight: bold;
+}

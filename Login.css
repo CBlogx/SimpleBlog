@@ -1,0 +1,74 @@
+#Login-page{
+    width: 1536px;
+    height: 722px;
+    margin: 0px auto;
+    padding: 0;
+    background-color: whitesmoke;
+}
+#Top{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-top: 400px solid;
+    border-left:  768px solid;
+    border-right: 768px solid;
+    border-bottom: 250px solid ;
+    border-color: rgb(61, 61, 61) transparent transparent transparent; 
+    z-index: 2;
+}
+#Middle{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 700px;
+    margin-top: 300px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    border: 8px double #d11a1a;
+    z-index: 3;
+}
+#Middle:hover{
+    cursor: pointer;
+}
+#Bottom{
+    position: relative;
+    margin-top: -577.9px;
+    width: 0px;
+    height: 0px;
+    border-top: 250px solid;
+    border-left:  768px solid;
+    border-right: 768px solid;
+    border-bottom: 400px solid ;
+    border-color: transparent transparent rgb(255, 255, 255) transparent; 
+}
+.go{
+    animation: go ;
+    animation-duration: 6s;
+    transform-origin: top;
+}
+@keyframes go{
+    0%{transform:rotateX(0);}
+    100%{transform:rotateX(90deg);}
+}
+.out{
+    transform-origin: 62.5px -298.5px;
+    animation-name:out;
+    animation-duration: 6s;
+}
+@keyframes out{
+    0%{transform:rotateX(0);}
+    100%{transform:rotateX(90deg);}
+}
+.down{
+    animation: down;
+    animation-duration: 6s;
+    transform-origin: bottom;
+}
+@keyframes down{
+    0%{transform:rotateX(0);}
+    100%{transform:rotateX(90deg);}
+}
