@@ -14,7 +14,7 @@
     border-right: 768px solid;
     border-bottom: 250px solid ;
     border-color: rgb(61, 61, 61) transparent transparent transparent; 
-    z-index: 2;
+    z-index: 3;
 }
 #Middle{
     position: absolute;
@@ -26,12 +26,12 @@
     color: white;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 700px;
+    margin-left: 697.45px;
     margin-top: 300px;
     background-color: #FF0000;
     border-radius: 50%;
     border: 8px double #d11a1a;
-    z-index: 3;
+    z-index: 4;
     
 }
 #Middle:hover{
@@ -47,6 +47,7 @@
     border-right: 768px solid;
     border-bottom: 400px solid ;
     border-color: transparent transparent rgb(255, 255, 255) transparent; 
+    z-index: 2;
 }
 #blog{
     width: 300px;

@@ -1,0 +1,31 @@
+.Botnavi{
+    position: fixed;
+    width: 40px;
+    height: 250px;
+    z-index: 9;
+    bottom: 0px;
+    right: 10px;
+}
+.Botnaviul{
+    list-style: none;
+    text-align: center;
+}
+.Botnavili{
+    width: 36px;
+    height: 36px;
+    background-color:white;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.fa-qq,.fa-weixin,.fa-qrcode{
+    color: black;
+    font-size: 1em;
+    line-height: 36px;
+    cursor: pointer;
+}
+.fa-angle-up,.fa-angle-down{
+    font-size: 1.3em;
+    line-height: 36px;
+    cursor: pointer;
+}
+
