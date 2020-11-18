@@ -1,8 +1,3 @@
-window.onload=function(){
-    showSlides();
-    setInterval(function(){Time()},0);
-}
-
 function Time(){
     var d=new Date();
     if(d.getMonth()<9){

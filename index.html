@@ -12,15 +12,32 @@
             margin: 0px auto;
             padding: 0;
         }
+        video {
+            position: fixed;
+            width: 100%;
+            height: auto;
+            background-attachment:fixed;
+            z-index: -9999;
+            }
     </style>
+    <script src="create.js"></script>
+    <script type="text/javascript" src="mouse.js"></script>
     <script type="text/javascript" src="主页面/Time.js">
     </script>
     <script type="text/javascript" src="主页面/Loin.js">
     </script>
+    <script>
+        window.onload=function(){
+        showSlides();
+        setInterval(function(){Time()},0);
+        count();
+        setInterval(count,3333);
+        }
+    </script>
 </head>
 
 <body style='overflow:-Scroll;overflow-x:hidden'>
-    <div id="Login-page">
+    <!-- <div id="Login-page">
         <div id="Top" class="">
         </div>
         <div >
@@ -30,9 +47,12 @@
         </div>
         <span id="blog" class="">Welcome to CBlogx's Blog!</span>
     </div>
-
+ -->
     <div id="page" class="None">
-            <div class="Top">
+        <video width="100%" height="100%" autoplay muted loop>
+            <source src="鲸.mp4" type="video/mp4">
+          </video>
+            <div id="Idtop" class="Top">
                 <i class="fa fa-cog fa-spin"></i>
                 <span>Website is building...  2020.10.21 13:14</span>
                 <p id="Time"></p>
@@ -44,27 +64,24 @@
                      </a>
                  </div>
                  <ul>
-                     <li><a href="">首页</a></li>
-                     <li><a href="美文界面/主页面.html">美文</a></li>
-                     <li><a href="">人生</a></li>
-                     <li><a href="">散文</a></li>
-                     <li><a href="">诗词</a></li>
-                     <li><a href="">小说</a></li>
-                     <li><a href="">语录</a></li>
-                     <li><a href="">专题</a></li>
-                     <li><a href="">作者</a></li>
-                     <div class="More">
-                         <a class="More-More" href="">
-                             <span>更多<i class="fa fa-angle-double-down"></i></span>  
-                         </a>
-                         <div class="Morething">
-                         <a href="">文章推荐</a>
-                         <a href="">反馈建议</a>
-                         <a href="">建站心得</a>
-                         <a href="">加入我们</a>
-                         </div>
-                     </div>
-                 </ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">流行文学</a></li>
+                    <li><a href="">人文自然</a></li>
+                    <li><a href="">科技之光</a></li>
+                    <li><a href="">电影视界</a></li>
+                    <li><a href="">文艺复兴</a></li>
+                    <div class="More">
+                        <a class="More-More" href="">
+                            <span>更多<i class="fa fa-angle-double-down"></i></span>  
+                        </a>
+                        <div class="Morething">
+                        <a href="">反馈建议</a>
+                        <a href="">建站心得</a>
+                        <a href="">加入我们</a>
+                        <a href="站长之家/主页面.html">站长之家</a>
+                        </div>
+                    </div>
+                </ul>
                  <div  class="Search search">
                      <input class="Search-txt" type="text" name="" placeholder="Type to search">
                      <a class="Search-btn" href="">
@@ -76,34 +93,25 @@
              <div class="Left">
                  <div class="Name">
                  </div>
-                 <ul>
-                     <li><a href="">推荐阅读</a></li>
-                     <li><a href="">科学知识</a></li>
-                     <li><a href="">程序技术</a></li>
-                     <li><a href="">音乐欣赏</a></li>
-                     <li><a href="">美图美景</a></li>
-                     <li><a href="">发现更多</a></li>
-                     <li><a href="站长之家/主页面.html">站长之家</a></li>
-                 </ul>
              </div>
              <div class="Middle" >
                  <div class="Mid-Top">
                      <div class="Showpic" >
-                         <div>
-                             <a href="">
-                                 <img class="Slidepic fade" src="爱情.jpg" title="爱情">
-                             </a>
-                         </div>
-                         <div >
-                             <a href="">
-                                 <img class="Slidepic fade" src="山山.jpg" title="山山">
-                             </a>
-                         </div>
-                         <div >
-                             <a href="">
-                                 <img class="Slidepic fade" src="文艺.jpg" title="文艺">
-                             </a>
-                         </div>
+                        <div>
+                            <a href="">
+                                <img class="Slidepic fade" src="主页面/Pic/爱情.jpg" title="爱情">
+                            </a>
+                        </div>
+                        <div >
+                            <a href="">
+                                <img class="Slidepic fade" src="主页面/Pic/山山.jpg" title="山山">
+                            </a>
+                        </div>
+                        <div >
+                            <a href="">
+                                <img class="Slidepic fade" src="主页面/Pic/文艺.jpg" title="文艺">
+                            </a>
+                        </div>
                          <div class="describles">
                             <a class="describle describle1" href="">日月星辰</a>
                             <a class="describle describle2" href="">山川河海</a>
@@ -117,60 +125,103 @@
                          <span class="dot" onclick="Currentslide(3)"></span>
                      </div>
                      <div class="theme1">
-                         <a href="">
-                             <img src="音乐.jpg" alt="" title="音乐">
-                         </a>
-                     </div>
-                     <div class="theme2">
-                         321
-                     </div>
-                     <div class="theme3">
-                         213
-                     </div>
+                        <a href="">
+                            <img src="主页面/Pic/宇航员.jpg" alt="" title="浩瀚星海">
+                        </a>
+                    </div>
+                    <div class="theme2">
+                        <a href="">
+                            <img src="主页面/Pic/哈士奇.jpg" alt="" title="哈士奇">
+                        </a>
+                    </div>
+                    <div class="theme3">
+                       <a href="">
+                           <img src="主页面/Pic/风景.jpg" alt="" title="风景">
+                       </a>
+                    </div>
+                    <div class="theme-describles">
+                       <a class="theme-describle theme1-describle1" href="">宇航员</a>
+                       <a class="theme-describle theme2-describle2" href="">老狗</a>
+                       <a class="theme-describle theme3-describle3" href="">釜山行</a>
+                    </div>
                  </div>
                  <div class="Mid-Mid">
-                     Mid-Mid
-                 </div>
-                 <div class="Mid-Bot">
-                     Mid-Bot
-                 </div>
+                    <div class="Mid-Mid-Trapezoid">
+                    </div>
+                    <div class="Mid-Mid-News">
+                       <span>what a big news!</span>
+                    </div>
+                </div>
+                <div class="Mid-Bot">
+                    <div class="Mid-Bot1">
+                       <div class="Mid-Bot1-img">
+                           <a href="http://marvel.mtime.com/" target="_blank">
+                               <img src="主页面/Pic/漫威.jpg" alt="">
+                           </a>
+                       </div>
+                       <div class="Mid-Bot1-doc">
+                           &emsp;&emsp;<span>漫威漫画公司（Marvel Comics）是美国漫画巨头之一，
+                               它创建于1939年，于1961年正式定名为Marvel，旧译为“惊奇漫画”，
+                               曾用名“时代漫画”（Timely Comics）、亚特拉斯漫画（Atlas Comics）。</span><br>
+                               &emsp;&emsp;<span>漫威的创立者是出版商马丁·古德曼，古德曼早先致力于创办通俗杂志，
+                                   题材涵盖西部故事、侦探、冒险和科幻等许多方面。
+                                   到1938年，他决定寻找新的发展方向——新奇，华丽，还要有引人入胜的激烈场面——漫画正是这样的东西。
+                                   尽管当时DC漫画公司已经抢得了先机，推出了两大王牌角色超人和蝙蝠侠，
+                                   不过凭借新奇的点子和精彩的创意，漫威还是独辟蹊径，创造出了令人难忘的新角色。</span><br>
+                           &emsp;&emsp;<span>著名英雄:美国队长，浩克/绿巨人，蜘蛛侠，雷神托尔，钢铁侠
+                               ，超胆侠，惩罚者，金刚狼，死侍，惊奇队长，恶灵骑士，刀锋战士
+                           </span>
+                           
+                       </div>
+                    </div>
+                    <div class="Mid-Bot2">
+                        <div class="Mid-Bot2-img">
+                           <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                        <div class="Mid-Bot2-doc">
+
+                        </div>
+                    </div>
+                </div>
              </div>
              <div class="Right">
-                 Right
              </div>
              </div>
-             <div class="Botnavi">
+             <div id="Idbottom" class="Bottom">
+                <div class="Info">
+                    <div class="Infoborder">
+                        <div class="Infoborder-mation">
+                            <span>Address:CBlogx.github.io</span>
+                            &nbsp;
+                            <span>Loaction:HangZhou ZJ10001</span>
+                        </div>
+                    </div>
+                    <div class="Information">
+                        <p class="Information-s">
+                        Since 2020.10.12,Build with ♥ by Lanborad<br>
+                        </p>
+                        <p class="Information-s">
+                        Welcome to join us for : 123456@qq.com<br>
+                        </p>
+                        <p class="Information-s Information-sh">
+                        深杭ICP备1234567号-33
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Botnavi">
                 <ul class="Botnaviul">
                     <li class="Botnavili"><i class="fa fa-qq" aria-hidden="true"></i></li>
                     <li class="Botnavili"><i class="fa fa-weixin" aria-hidden="true"></i></li>
-                    <li class="Botnavili"><i class="fa fa-qrcode" aria-hidden="true"></i></li>
-                    <li class="Botnavili"><i class="fa fa-angle-up" aria-hidden="true"></i></li>
-                    <li class="Botnavili"><i class="fa fa-angle-down" aria-hidden="true"></i> </li>
+                    <li class="Botnavili"><i class="fa fa-qrcode" aria-hidden="true" onmouseover="showimg()" onmouseout="hiddenimg()"></i></li>
+                    <li class="Botnavili"><a onclick="scrollup()" style="color: black;"><i class="fa fa-angle-up" aria-hidden="true"></i></a></li>
+                    <li class="Botnavili"><a onclick="scrolldown()" style="color: black;"> <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                 </ul>
+                <div class="qrcode" >
+                    BiliBili扫码关注
+                    <img src="主页面/Pic/二维码.jpg" alt="" title="打开BiliBili扫码关注我哦！">
+                </div>
             </div>
-             <div class="Bottom">
-                 <div class="Info">
-                     <div class="Infoborder">
-                         <div class="Infoborder-mation">
-                             <span>Address:CBlogx.github.io</span>
-                             &nbsp;
-                             <span>Loaction:HangZhou ZJ10001</span>
-                         </div>
-                     </div>
-                     <div class="Information">
-                         <p class="Information-s">
-                         Since 2020.10.12,Build with ♥ by Lanborad<br>
-                         </p>
-                         <p class="Information-s">
-                         Welcome to join us for : 123456@qq.com<br>
-                         </p>
-                         <p class="Information-s">
-                         深杭ICP备1234567号-33
-                         </p>
-                     </div>
-                     
-                 </div>
-             </div>
         </div>        
 </body>
 

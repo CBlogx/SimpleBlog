@@ -1,5 +1,47 @@
 .Mid-Bot{
     width: 1119.2px;
     height: 400px;
-    background-color: aqua;
+}
+.Mid-Bot1,.Mid-Bot2{
+    float: left;
+    width: 1000px;
+    height: 300px;
+    background: white;
+    margin-top: 25px;
+    margin-left: 59.2px;
+    border: solid 1px green ;
+}
+.Mid-Bot1-img,.Mid-Bot2-img{
+    float: left;
+    width: 400px;
+    height: 250px;
+    /* background-color: lavender; */
+    margin-top: 25px;
+    margin-left: 25px;
+    border: 1px dashed;
+}
+.Mid-Bot1-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.Mid-Bot1-doc,.Mid-Bot2-doc{
+    float: left;
+    width: 525px;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: 1px dashed darkgreen;
+}
+.Mid-Bot1-doc span{
+    border-bottom: 1px solid #000;
+    font-family: STFangsong;
+}
+.Mid-Bot2-img{
+    text-align: center;
+    font-size: 200px;
+}
+.Mid-Bot2-img i{
+    color: cornflowerblue;
+    cursor: pointer;
 }

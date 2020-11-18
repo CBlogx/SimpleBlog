@@ -4,10 +4,10 @@
     height:1200px;
     /* background-color: rgb(255, 199, 209); */
 }
-.Name{
+/* .Name{
     width: 168px;
     height: 95px;
-    background: url("Pic/Lpic.png");
+    
     margin-top: 10px;
     border-radius: 15px;
 }
@@ -36,4 +36,4 @@
 }
 .Left li a:hover:not(.active){
     background-color: rgb(230, 230, 230);
-    }
+    } */

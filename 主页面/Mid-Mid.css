@@ -1,5 +1,37 @@
 .Mid-Mid{
     width: 1119.2px;
     height: 200px;
-    background-color:lightgreen;
+    background: url("Pic/条纹.jpg");
+}
+.Mid-Mid-Trapezoid{
+    width: 800px;
+    height: 50px;
+    float: left;
+    margin-top: 50px;
+    opacity: 0.85;
+    color: white;
+    background:linear-gradient(-60deg,rgba(0,0,0,0) 30px,rgba(0,0,0,1) 0);
+    background-size: 50px 50px;
+    background-image: linear-gradient(225deg,rgba(0,0,0,0) 50%,black 0);
+    animation: Trapezoid 6s linear infinite ;
+}
+@keyframes Trapezoid{
+    from{background-position-x:0px ;}
+    to{background-position-x: 800px;}
+}
+.Mid-Mid-News{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(30deg);
+}
+.Mid-Mid-News span{
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 2.5px 2.5px black;
 }
