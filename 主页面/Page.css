@@ -1,3 +1,4 @@
+@import "Login.css";
 @import "Top.css";
 @import "Navi.css";
 @import "Main.css";
@@ -6,8 +7,11 @@
 @import "Mid-Mid.css";
 @import "Mid-Bot.css";
 @import "Right.css";
+@import "Botnavi.css";
 @import "Bottom.css";
 @import "More.css";
+
+
 body{
     background-size: 100%;
     background-repeat: no-repeat;

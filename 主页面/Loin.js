@@ -10,7 +10,7 @@ function start(){
     blog.className="blog";
     index=1;
     page();
-    setTimeout(stop,5990);
+    setTimeout(stop,6000);
 }
 function stop(){
     if(index){
