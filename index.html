@@ -20,12 +20,11 @@
             z-index: -9999;
             }
     </style>
-    <script src="create.js"></script>
+    <script type="text/javascript" src="create.js"></script>
     <script type="text/javascript" src="mouse.js"></script>
-    <script type="text/javascript" src="主页面/Time.js">
-    </script>
-    <script type="text/javascript" src="主页面/Loin.js">
-    </script>
+    <script type="text/javascript" src="zone.js"></script>
+    <script type="text/javascript" src="主页面/Time.js"></script>
+    <script type="text/javascript" src="主页面/Loin.js"></script>
     <script>
         window.onload=function(){
         showSlides();
@@ -37,7 +36,7 @@
 </head>
 
 <body style='overflow:-Scroll;overflow-x:hidden'>
-    <!-- <div id="Login-page">
+    <div id="Login-page">
         <div id="Top" class="">
         </div>
         <div >
@@ -47,7 +46,7 @@
         </div>
         <span id="blog" class="">Welcome to CBlogx's Blog!</span>
     </div>
- -->
+
     <div id="page" class="None">
         <video width="100%" height="100%" autoplay muted loop>
             <source src="鲸.mp4" type="video/mp4">
@@ -175,9 +174,10 @@
                        </div>
                     </div>
                     <div class="Mid-Bot2">
-                        <div class="Mid-Bot2-img">
-                           <i class="fa fa-plus" aria-hidden="true"></i>
-                        </div>
+                        <div id="Mid-Bot2-img" class="Mid-Bot2-img" onclick="Add()">
+                            <input id="file" type="file"  accept=".jpg,.gif"/>
+                            <i id="addimg" class="fa fa-plus" aria-hidden="true" ></i>
+                         </div>
                         <div class="Mid-Bot2-doc">
 
                         </div>

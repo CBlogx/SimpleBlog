@@ -15,11 +15,11 @@
 body{
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: #F5F6F7;
+    /* background-color: #F5F6F7; */
 }
 
 #page{
-    
+    margin-top: -736px;
 }
 .Middle{
     float: left;
@@ -28,15 +28,15 @@ body{
     background-color: white;
     opacity: 0.8;
 }
-/* .None{
+.None{
     display: none;
 }
 .Page{
     animation-name:Page;
     animation-duration: 6s;
     transform-origin: top;
-} */
-/* @keyframes Page{
+} 
+ @keyframes Page{
     0%{
         transform: scale(0,0); 
     }
@@ -44,4 +44,3 @@ body{
         transform: scale(1,1);
     }
 }
- */
